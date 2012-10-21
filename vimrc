@@ -36,7 +36,7 @@ set lbr
 set tabstop=4 shiftwidth=4 expandtab
 
 " colorscheme
-colorscheme delek
+colorscheme zenburn
 
 " no backup files
 set nobackup
