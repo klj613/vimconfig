@@ -17,6 +17,8 @@ Bundle 'tpope/vim-fugitive'
 filetype plugin indent on
 " vundle end
 
+" enable 256 colors
+set t_Co=256
 set nu
 
 syntax on
