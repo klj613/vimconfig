@@ -21,3 +21,6 @@ colorscheme delek
 set nobackup
 set nowritebackup
 set noswapfile
+
+" ctrl-k to clear search highlighting
+noremap <C-K> :nohl<CR>
