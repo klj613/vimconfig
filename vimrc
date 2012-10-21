@@ -1,3 +1,22 @@
+" vundle
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" vundles
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/JavaScript-Indent'
+Bundle 'rodnaph/vim-color-schemes'
+Bundle 'tpope/vim-fugitive'
+" vundles end
+
+filetype plugin indent on
+" vundle end
+
 set nu
 
 syntax on
