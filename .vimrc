@@ -19,6 +19,15 @@ filetype plugin indent on
 
 " enable 256 colors
 set t_Co=256
+
+" custom filetype ignores
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\.git$\|\.hg$\|\.svn$\|build$\|classes$\|node_modules$\|vendor$\|\.lein.*$',
+  \ 'file': '\.swf$\|\.flv$\|\.gif$\|\.png$\|\.jpg$\|\.exe$\|\.so$\|\.dll$\|\.swp$\|\.DS_Store$\|\.jar$',
+  \ 'link': 'bad_symbolic_link',
+  \ }
+
+" numbers
 set nu
 
 syntax on
