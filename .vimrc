@@ -45,3 +45,11 @@ set noswapfile
 
 " ctrl-k to clear search highlighting
 noremap <C-K> :nohl<CR>
+
+" Trailing whitespace
+highlight TrailingWhitespace ctermbg=red ctermfg=white guibg=#592929
+match TrailingWhitespace /\s\+$/
+
+" Show lines over 80 chars
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
