@@ -12,6 +12,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/JavaScript-Indent'
 Bundle 'rodnaph/vim-color-schemes'
 Bundle 'tpope/vim-fugitive'
+Bundle 'joonty/vim-phpqa.git'
 " vundles end
 
 filetype plugin indent on
@@ -62,3 +63,10 @@ match TrailingWhitespace /\s\+$/
 " Show lines over 80 chars
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
+
+" PHP QA
+let g:phpqa_messdetector_autorun = 0
+let g:phpqa_codesniffer_autorun = 0
+let g:phpqa_codecoverage_autorun = 0
+
+let g:phpqa_codesniffer_args = "--standard=PSR2"
