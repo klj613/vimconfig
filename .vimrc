@@ -74,3 +74,9 @@ let g:phpqa_codesniffer_args = "--standard=PSR2"
 " Ability to use the systems clipboard (e.g. copy + paste between programs)
 map ,y "+yy
 map ,p "+p
+
+" Disable arrow keys
+noremap  <Up> ""
+noremap  <Down> ""
+noremap  <Left> ""
+noremap  <Right> ""
