@@ -70,3 +70,7 @@ let g:phpqa_codesniffer_autorun = 0
 let g:phpqa_codecoverage_autorun = 0
 
 let g:phpqa_codesniffer_args = "--standard=PSR2"
+
+" Ability to use the systems clipboard (e.g. copy + paste between programs)
+map ,y "+yy
+map ,p "+p
