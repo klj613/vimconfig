@@ -13,6 +13,7 @@ Bundle 'vim-scripts/JavaScript-Indent'
 Bundle 'rodnaph/vim-color-schemes'
 Bundle 'tpope/vim-fugitive'
 Bundle 'joonty/vim-phpqa.git'
+Bundle 'vim-scripts/vimwiki'
 " vundles end
 
 filetype plugin indent on
