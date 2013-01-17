@@ -76,12 +76,6 @@ let g:phpqa_codesniffer_args = "--standard=PSR2"
 map ,y "+yy
 map ,p "+p
 
-" Disable arrow keys
-noremap  <Up> ""
-noremap  <Down> ""
-noremap  <Left> ""
-noremap  <Right> ""
-
 " Moving lines
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
