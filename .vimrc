@@ -46,6 +46,8 @@ set lbr
 " 4 spaces
 set tabstop=4 shiftwidth=4 expandtab
 
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
 " colorscheme
 colorscheme zenburn
 
