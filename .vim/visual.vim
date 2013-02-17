@@ -1,0 +1,3 @@
+
+" colorscheme
+colorscheme zenburn
