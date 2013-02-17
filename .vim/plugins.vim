@@ -11,6 +11,7 @@ Bundle 'rodnaph/vim-color-schemes'
 Bundle 'tpope/vim-fugitive'
 Bundle 'joonty/vim-phpqa.git'
 Bundle 'vim-scripts/vimwiki'
+Bundle 'vim-scripts/localvimrc'
 
 " disable jump to buffer
 let g:ctrlp_jump_to_buffer = 0
