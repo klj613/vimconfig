@@ -1,3 +1,3 @@
 
 " colorscheme
-colorscheme zenburn
+colorscheme molokai

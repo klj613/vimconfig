@@ -13,6 +13,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'joonty/vim-phpqa.git'
 Bundle 'vim-scripts/vimwiki'
 Bundle 'vim-scripts/localvimrc'
+Bundle 'vim-scripts/AfterColors.vim'
 
 " disable jump to buffer
 let g:ctrlp_jump_to_buffer = 0
