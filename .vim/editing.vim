@@ -4,6 +4,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" golang hard tabs
+au FileType go set noexpandtab
+
 " word wrap without line breaks
 set lbr
 
