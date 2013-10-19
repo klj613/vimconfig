@@ -15,6 +15,7 @@ Bundle 'vim-scripts/vimwiki'
 Bundle 'vim-scripts/localvimrc'
 Bundle 'vim-scripts/AfterColors.vim'
 Bundle 'rodnaph/jinja.vim'
+Bundle 'jnwhiteh/vim-golang'
 
 " disable jump to buffer
 let g:ctrlp_jump_to_buffer = 0

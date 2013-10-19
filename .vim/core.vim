@@ -13,3 +13,5 @@ set ff=unix
 set nobackup
 set nowritebackup
 set noswapfile
+
+set omnifunc=syntaxcomplete#Complete
