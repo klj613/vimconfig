@@ -1,0 +1,31 @@
+#!/bin/bash
+
+VIMRC_TARGET=$PWD/.vimrc
+VIMRC_LINK=$HOME/.vimrc
+
+VIM_TARGET=$PWD/.vim
+VIM_LINK=$HOME/.vim
+
+function error() {
+    echo "Error: $1"
+    exit 1
+}
+
+if [ -d $VIM_LINK ] && [ -h $VIM_LINK ] && [ "$(readlink -f $VIM_LINK)" != "$VIM_TARGET" ]; then
+    error "Dir '$VIM_LINK' already exists"
+fi
+if [ -e $VIMRC_LINK ] && [ -h $VIMRC_LINK ] && [ "$(readlink -f $VIMRC_LINK)" != "$VIMRC_TARGET" ]; then
+    error "File '$VIMRC_LINK' already exists"
+fi
+
+if [ "$(readlink -f $VIM_LINK)" != "$VIM_TARGET" ]; then
+    ln -s $VIM_TARGET $VIM_LINK
+fi
+if [ "$(readlink -f $VIMRC_LINK)" != "$VIMRC_TARGET" ]; then
+    ln -s $VIMRC_TARGET $VIMRC_LINK
+fi
+
+git submodule init && git submodule update
+vim +BundleInstall +qall
+
+echo "Completed"
