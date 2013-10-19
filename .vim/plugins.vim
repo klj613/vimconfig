@@ -14,8 +14,12 @@ Bundle 'joonty/vim-phpqa.git'
 Bundle 'vim-scripts/vimwiki'
 Bundle 'vim-scripts/localvimrc'
 Bundle 'vim-scripts/AfterColors.vim'
+Bundle 'vim-scripts/YankRing.vim'
 Bundle 'rodnaph/jinja.vim'
 Bundle 'jnwhiteh/vim-golang'
+
+" disable <C-p> for yankring (leave to ctrlp)
+let g:yankring_replace_n_pkey = '<noop>'
 
 " disable jump to buffer
 let g:ctrlp_jump_to_buffer = 0

@@ -21,3 +21,6 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 
 " ctrl-l to clear search highlighting
 noremap <C-L> :nohl<CR>
+
+" show YankRing
+nnoremap :yr :YRShow<CR>
