@@ -17,6 +17,7 @@ Bundle 'vim-scripts/AfterColors.vim'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'rodnaph/jinja.vim'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'joonty/vdebug.git'
 
 " disable <C-p> for yankring (leave to ctrlp)
 let g:yankring_replace_n_pkey = '<noop>'
