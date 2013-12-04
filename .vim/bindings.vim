@@ -24,3 +24,6 @@ noremap <C-L> :nohl<CR>
 
 " show YankRing
 nnoremap :yr :YRShow<CR>
+
+" make arrow keys work in tmux
+map <Esc>[B <Down>
