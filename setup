@@ -1,10 +1,16 @@
 #!/bin/bash
 
+if [ -n "$1" ]; then
+    DIR=$1
+else
+    DIR=$HOME
+fi
+
 VIMRC_TARGET=$PWD/.vimrc
-VIMRC_LINK=$HOME/.vimrc
+VIMRC_LINK=$DIR/.vimrc
 
 VIM_TARGET=$PWD/.vim
-VIM_LINK=$HOME/.vim
+VIM_LINK=$DIR/.vim
 
 function error() {
     echo "Error: $1"
@@ -25,7 +31,4 @@ if [ "$(readlink -f $VIMRC_LINK)" != "$VIMRC_TARGET" ]; then
     ln -s $VIMRC_TARGET $VIMRC_LINK
 fi
 
-git submodule init && git submodule update
 vim +BundleInstall +qall
-
-echo "Completed"
