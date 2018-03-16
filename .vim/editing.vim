@@ -10,12 +10,11 @@ au FileType go set noexpandtab
 " word wrap without line breaks
 set lbr
 
-" change defautl to ignroe case for text searches
+" change default to ignore case for text searches
 set ignorecase
 set smartcase
 
 " highlight all search pattern matches
-
 set hlsearch
 
 " auto indenting
